@@ -47,9 +47,9 @@ const Navbar = () => {
 
                     {/* Button for only mobile devices */}
                     <div className='md:hidden'>
-                        <button 
-                        onClick={toggleMenu}
-                        className='text-neutralDGrey focus:outline-none focus:text-gray-500'
+                        <button
+                            onClick={toggleMenu}
+                            className='text-neutralDGrey focus:outline-none focus:text-gray-500'
                         >
                             {
                                 isMenuOpen ? (<FaXmark className='h-6 w-6' />) : (<FaBars className='h-6 w-6' />)
@@ -59,7 +59,7 @@ const Navbar = () => {
                 </div>
 
                 {/* NavItems for mobile devices */}
-                <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${isMenuOpen? "block fixed top-2 left-0 right-0" : "hidden"}`}>
+                <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${isMenuOpen ? "block fixed top-2 left-0 right-0" : "hidden"}`}>
                     {
                         navItems.map(({ link, path }) => <Link to={path} spy={true} smooth={true} key={path}
                             offset={-100} className='block text-base text-white hover:text-neutralDGrey first:font-medium'>{link}</Link>)
