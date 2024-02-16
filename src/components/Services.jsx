@@ -25,7 +25,7 @@ const Services = () => {
     ]
 
     return (
-        <div className='md:px-14 px-4 max-w-screen-2xl mx-auto'>
+        <div className='md:px-14 px-4 max-w-screen-2xl mx-auto' id='service'>
 
             {/* Clients Section */}
             <div className='text-center my-10'>

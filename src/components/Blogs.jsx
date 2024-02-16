@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div>
+        <div id='testimonials'>
             {/* Caring */}
             <div className='px-4 md:px-14 max-w-screen-2xl mx-auto my-8 items-center text-center'>
                 <h2 className='font-semibold text-neutralDGrey text-4xl mb-2'>Caring is the new marketing</h2>

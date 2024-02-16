@@ -3,7 +3,7 @@ import logo from '../assets/logo.png'
 
 const Footer = () => {
     return (
-        <div className='max-w-screen-2xl bg-neutralBlack py-8 px-4 md:px-14 flex md:flex-row flex-col'>
+        <div className='max-w-screen-2xl bg-neutralBlack py-8 px-4 md:px-14 flex md:flex-row flex-col' id='faq'>
             {/* Company Details */}
             <div className='md:w-1/3 flex flex-col gap-10'>
                 <a href='' className='text-2xl font-semibold flex items-center space-x-3'>

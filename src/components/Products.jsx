@@ -23,7 +23,7 @@ const Products = () => {
             </div>
 
             {/* Tesla */}
-            <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 bg-neutralSilver py-16'>
+            <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 bg-neutralSilver py-16' id='product'>
                 <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
                     <div className='md:w-1/3'>
                         <img className='h-64 w-64' src={tesla} />
