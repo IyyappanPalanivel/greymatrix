@@ -45,7 +45,7 @@ const Navbar = () => {
                     {/* Brand Logo */}
                     <a href='' className='text-2xl font-semibold flex items-center space-x-3'>
                         <img className='w-20 h-20 inline-block' src={logo} />
-                        <span className='text-brandSecondary'>Grey Matter</span>
+                        <span className='text-brandSecondary'>Grey Matrix</span>
                     </a>
 
                     {/* NavItems for Large Devices */}

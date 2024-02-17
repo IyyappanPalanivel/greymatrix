@@ -8,7 +8,7 @@ const Footer = () => {
             <div className='md:w-1/3 flex flex-col gap-10'>
                 <a href='' className='text-2xl font-semibold flex items-center space-x-3'>
                     <img className='h-10 w-10' src={logo} />
-                    <span className='text-neutralWhite '>Grey Matter</span>
+                    <span className='text-neutralWhite '>Grey Matrix</span>
                 </a>
 
                 <div>
