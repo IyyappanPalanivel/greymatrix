@@ -2,7 +2,24 @@ import React from 'react';
 import MobileLogin from '../assets/MobileLogin.png';
 import tesla from '../assets/tesla.png';
 
+import booksbear from '../assets/clients/booksbear.jpg';
+import abinyt from '../assets/clients/abinyt.jpg';
+import yahve from '../assets/clients/yahve.png';
+import jesta from '../assets/clients/jesta.png';
+import MagicMaze from '../assets/clients/MagicMaze.png';
+
 const Products = () => {
+
+    const WhyWe = "Why Businesses Need Digitalization?";
+    const WhyWeAnswer = "In today's hyper-connected world, digitalization isn't just a choice; it's a necessity for businesses to thrive. Embracing digital transformation empowers companies to streamline operations, enhance customer experiences, and stay competitive in rapidly evolving markets. Those who resist risk falling behind in an increasingly digital landscape";
+    const WhyWeAnswer2 = "Digitalization offers a myriad of benefits, including increased efficiency, improved agility, and enhanced innovation capabilities. By leveraging digital tools and technologies, businesses can optimize processes, gain valuable insights from data, and deliver personalized experiences to customers, leading to sustainable growth and long-term success.";
+    const WhatIf = "The Risks of Ignoring the Digital Revolution";
+    const WhatIfAnswer = "Picture your business as a ship in a fast-moving river. Without embracing digitalization, it's like trying to navigate upstream without a paddle. You risk falling behind as the currents of technology propel others forward. In today's digital-first landscape, businesses that resist change find themselves adrift, unable to keep pace with evolving customer expectations and market trends. Don't let your business get left behind in the wake of the digital revolution.";
+
+    const Unlocking = "We Unlocking Potential";
+    const WhyUsAnswer = "Experience the difference with our freelance team, where creativity knows no bounds, deadlines are met with precision, and every project is treated as a unique opportunity for innovation. With a diverse pool of talent, seamless communication, and a passion for excellence, we're committed to delivering exceptional results that exceed your expectations. Say goodbye to rigid structures and hello to flexibility, efficiency, and unparalleled expertise with our freelance team.";
+    const Collaboration = "Collaborations That Drive Success";
+
     return (
         <div>
             {/* How to design */}
@@ -15,8 +32,11 @@ const Products = () => {
 
                     {/*  */}
                     <div className='md:w-2/3'>
-                        <h2 className='text-4xl font-semibold text-neutralDGrey py-2'>How to design your site footer like we did</h2>
-                        <p className='py-4 text-neutralGrey text-sm'>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+                        <h2 className='text-4xl font-semibold text-neutralDGrey py-2'>{WhyWe}</h2>
+                        <p className='py-4 text-neutralGrey text-sm'>{WhyWeAnswer}</p>
+                        <p className='py-2 text-neutralGrey text-sm'>{WhyWeAnswer2}</p>
+                        <h2 className='text-4xl font-semibold text-neutralDGrey py-2'>{WhatIf}</h2>
+                        <p className='py-4 text-neutralGrey text-sm'>{WhatIfAnswer}</p>
                         <button className='bg-brandPrimary px-4 py-2 text-white rounded hover:bg-neutralDGrey transition-all duration-300'>Learn More</button>
                     </div>
                 </div>
@@ -30,17 +50,17 @@ const Products = () => {
                     </div>
 
                     <div className='md:w-2/3 mx-auto'>
-                        <p className='text-neutralGrey font-medium text-sm md:w-4/5 leading-6'>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
-                        <h4 className='py-2 text-brandPrimary font-semibold text-xl'>Tim Smith</h4>
-                        <p className='text-neutralLGrey text-base'>British Dragon Boat Racing Association</p>
+                    <h4 className='py-2 text-brandPrimary font-semibold text-xl'>{Unlocking}</h4>
+                        <p className='text-neutralGrey font-medium text-sm md:w-4/5 leading-6'>{WhyUsAnswer}</p>
+                        <p className='text-neutralLGrey text-base mt-2'>{Collaboration}</p>
 
                         {/* Clients */}
                         <div className='flex py-4 gap-8 flex-wrap items-center'>
-                            <img src='/src/assets/logo.png' className='cursor-pointer h-12 w-12' />
-                            <img src='/src/assets/logo.png' className='cursor-pointer h-12 w-12' />
-                            <img src='/src/assets/logo.png' className='cursor-pointer h-12 w-12' />
-                            <img src='/src/assets/logo.png' className='cursor-pointer h-12 w-12' />
-                            <img src='/src/assets/logo.png' className='cursor-pointer h-12 w-12' />
+                            <img src={abinyt} className='cursor-pointer h-12 w-12 rounded'/>
+                            <img src={booksbear} className='cursor-pointer h-12 w-12 rounded' />
+                            
+                            <img src={yahve} className='cursor-pointer h-12 w-12 rounded'/>
+                            <img src={MagicMaze} className='cursor-pointer h-12 w-12 rounded' />
                             <div>
                                 <a className='font-semibold text-brandPrimary hover:text-neutralGrey'>Meet all customers {'-->'}</a>
                             </div>

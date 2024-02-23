@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.png'
+import GreyMatrixRoundedLogo from '../assets/GreyMatrixRoundedLogo.png'
 
 const Footer = () => {
     return (
@@ -7,12 +7,12 @@ const Footer = () => {
             {/* Company Details */}
             <div className='md:w-1/3 flex flex-col gap-10'>
                 <a href='' className='text-2xl font-semibold flex items-center space-x-3'>
-                    <img className='h-10 w-10' src={logo} />
+                    <img className='h-10 w-10' src={GreyMatrixRoundedLogo} />
                     <span className='text-neutralWhite '>Grey Matrix</span>
                 </a>
 
                 <div>
-                    <p className='text-neutralSilver text-sm'>Copyright © 2020 Nexcent ltd.</p>
+                    <p className='text-neutralSilver text-sm'>Copyright © 2024 Grey Matrix.</p>
                     <p className='text-neutralSilver text-sm'>All rights reserved</p>
                 </div>
 
@@ -33,7 +33,7 @@ const Footer = () => {
                     <p className='text-neutralSilver text-xs font-normal'>Blog</p>
                     <p className='text-neutralSilver text-xs font-normal'>Contact us</p>
                     <p className='text-neutralSilver text-xs font-normal'>Pricing</p>
-                    <p className='text-neutralSilver text-xs font-normal'>Testimonials</p>
+                    <p className='text-neutralSilver text-xs font-normal'>Portfolio</p>
                 </div>
 
                 {/* Company */}

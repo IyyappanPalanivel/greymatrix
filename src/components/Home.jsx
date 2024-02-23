@@ -15,8 +15,8 @@ const Home = () => {
                         </div>
                         {/* Hero Text */}
                         <div className='md:w-1/2'>
-                            <h1 className='text-5xl font-semibold mb-4 leading-snug'>Welcome to <span className='text-brandPrimary leading-snug'>Grey Matrix</span></h1>
-                            <p className='font-normal text-neutralDGrey text-base mb-8'>Make Your Business Online</p>
+                            <h1 className='text-5xl font-semibold mb-4 leading-snug'>Welcome to <span className='text-brandPrimary leading-snug'>Grey Matrix</span>,</h1>
+                            <p className='font-normal text-neutralDGrey text-base mb-8'>Where innovation meets excellence in IT solutions.</p>
                             <button className='btn-primary'>Get Started</button>
                         </div>
                     </div>
