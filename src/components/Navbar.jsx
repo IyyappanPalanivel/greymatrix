@@ -2,11 +2,14 @@ import React, { useEffect, useState } from 'react';
 import GreyMatterLogo from '../assets/GreyMatterLogo.png';
 import { Link } from 'react-scroll';
 import { FaXmark, FaBars } from "react-icons/fa6";
+import EnquiryModal from './EnquiryModal';
 
 const Navbar = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
+
+    const [showModal, setShowModal] = useState(false);
 
     const navItems = [
         { link: 'Home', path: 'home' },
@@ -21,12 +24,16 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     }
 
-    useEffect(()=>{
+    const toggleModal = () => {
+        setShowModal(!showModal);
+    }
+
+    useEffect(() => {
         const handleScroll = () => {
-            if(window.scrollY > 100){
+            if (window.scrollY > 100) {
                 setIsSticky(true);
             }
-            else{
+            else {
                 setIsSticky(false);
             }
         };
@@ -59,7 +66,11 @@ const Navbar = () => {
                     {/* Button for large devices */}
                     <div className='space-x-12 hidden lg:flex items-center'>
                         {/* <a href='' className='text-brandPrimary hover:text-gray900'>Login</a> */}
-                        <button className='bg-brandPrimary text-white text-sm px-4 py-2 transition-all duration-300 rounded-md hover:bg-neutralDGrey' >Contact Us</button>
+                        <button
+                            onClick={toggleModal}
+                            className='bg-brandPrimary text-white text-sm px-4 py-2 transition-all duration-300 rounded-md hover:bg-neutralDGrey'
+                        >Contact Us
+                        </button>
                     </div>
 
                     {/* Button for only mobile devices */}
@@ -83,6 +94,7 @@ const Navbar = () => {
                     }
                 </div>
             </nav>
+            <EnquiryModal showModal={showModal} toggleModal={toggleModal}/>
         </header>
     );
 };

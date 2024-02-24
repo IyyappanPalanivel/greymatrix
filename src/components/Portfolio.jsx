@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BooksbearBanner from '../assets/portfolio/BooksbearBanner.jpg';
 import Lewansys from '../assets/portfolio/Lewansys.jpg';
 import Smartgold from '../assets/portfolio/Smartgold.jpg';
@@ -16,9 +16,9 @@ const Portfolio = () => {
             id: 3, title: 'Smartgold is a gold auction app redefining how users buy gold.', src: Smartgold
         },
     ];
-    
+
     const PortfolioTitle = "Showcase of Mastery";
-    const PortfolioDescription= "Explore our portfolio, where creativity meets functionality, and innovation intertwines with excellence. Witness the synergy of creativity and expertise, where each project tells a story of innovation, excellence, and success.";
+    const PortfolioDescription = "Explore our portfolio, where creativity meets functionality, and innovation intertwines with excellence. Witness the synergy of creativity and expertise, where each project tells a story of innovation, excellence, and success.";
 
     const Tagline = "Discover the power of Grey Matrix – where possibilities are limitless, and excellence is guaranteed."
 
@@ -46,11 +46,16 @@ const Portfolio = () => {
             </div>
 
 
-            {/*  */}
+            {/* Discover */}
             <div className='px-4 md:px-14 max-w-screen-2xl mx-auto py-8 items-center text-center bg-neutralSilver'>
                 <h1 className='text-neutralBlack font-semibold text-3xl mb-4'>{Tagline}</h1>
-                <button className='bg-brandPrimary px-3 py-3 rounded text-white hover:bg-neutralDGrey duration-300 transition-all'>Get Free Consulting {'-->'}</button>
+                <button
+                    className='bg-brandPrimary px-3 py-3 rounded text-white hover:bg-neutralDGrey duration-300 transition-all'
+                >Get Free Consulting {'-->'}
+                </button>
             </div>
+
+            
         </div>
     );
 };
