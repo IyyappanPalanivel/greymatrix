@@ -32,10 +32,10 @@ const Products = () => {
 
                     {/*  */}
                     <div className='md:w-2/3'>
-                        <h2 className='text-4xl font-semibold text-neutralDGrey py-2'>{WhyWe}</h2>
+                        <h2 className='text-4xl font-semibold text-brandSecondary py-2'>{WhyWe}</h2>
                         <p className='py-4 text-neutralGrey text-sm'>{WhyWeAnswer}</p>
                         <p className='py-2 text-neutralGrey text-sm'>{WhyWeAnswer2}</p>
-                        <h2 className='text-4xl font-semibold text-neutralDGrey py-2'>{WhatIf}</h2>
+                        <h2 className='text-4xl font-semibold text-brandSecondary py-2'>{WhatIf}</h2>
                         <p className='py-4 text-neutralGrey text-sm'>{WhatIfAnswer}</p>
                         <button className='bg-brandPrimary px-4 py-2 text-white rounded hover:bg-neutralDGrey transition-all duration-300'>Learn More</button>
                     </div>

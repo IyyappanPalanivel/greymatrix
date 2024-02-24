@@ -25,7 +25,7 @@ const About = () => {
                     <img className='h-96 w-96' src={Banner2} />
 
                     <div className='md:w-3/5 mx-auto'>
-                        <h1 className='text-neutralDGrey font-semibold text-3xl'>{AboutTitle}</h1>
+                        <h1 className='text-brandSecondary font-semibold text-3xl'>{AboutTitle}</h1>
                         <p className='py-4 text-neutralGrey text-sm'>{AboutUsContent}</p>
                         <button className='bg-brandPrimary py-2 px-4 rounded text-white hover:bg-neutralDGrey transition-all duration-300'>Explore Our Solutions</button>
                     </div>
@@ -37,7 +37,7 @@ const About = () => {
             <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16'>
                 <div className='flex flex-col md:flex-row justify-between gap-8'>
                     <div className='md:w-1/2'>
-                        <h2 className='font-semibold text-4xl text-neutralDGrey'>{Discover}<br />
+                        <h2 className='font-semibold text-4xl text-brandSecondary'>{Discover}<br />
                             <span className='text-brandPrimary'>{Journey}</span></h2>
                         <p className='text-base my-4'>{Milestones}</p>
                     </div>
@@ -50,7 +50,7 @@ const About = () => {
                             <div className='flex gap-4 items-center'>
                                 <img className='h-6 w-8' src={groups} />
                                 <div>
-                                    <h3 className='text-neutralDGrey font-bold text-2xl'>{impactNumbers.projectsCompleted}</h3>
+                                    <h3 className='text-brandSecondary font-bold text-2xl'>{impactNumbers.projectsCompleted}</h3>
                                     <p className='text-neutralGrey font-normal text-base'>Projects</p>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@ const About = () => {
                             <div className='flex gap-4 items-center'>
                                 <img className='h-6 w-8' src={groups} />
                                 <div>
-                                    <h3 className='text-neutralDGrey font-bold text-2xl'>{impactNumbers.satisfiedClients}</h3>
+                                    <h3 className='text-brandSecondary font-bold text-2xl'>{impactNumbers.satisfiedClients}</h3>
                                     <p className='text-neutralGrey font-normal text-base'>Clients</p>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@ const About = () => {
                             <div className='flex gap-4 items-center'>
                                 <img className='h-6 w-8' src={groups} />
                                 <div>
-                                    <h3 className='text-neutralDGrey font-bold text-2xl'>{impactNumbers.teamMembers}</h3>
+                                    <h3 className='text-brandSecondary font-bold text-2xl'>{impactNumbers.teamMembers}</h3>
                                     <p className='text-neutralGrey font-normal text-base'>Team Members</p>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ const About = () => {
                             <div className='flex gap-4 items-center'>
                                 <img className='h-6 w-8' src={groups} />
                                 <div>
-                                    <h3 className='text-neutralDGrey font-bold text-2xl'>{impactNumbers.yearsOfExperience}</h3>
+                                    <h3 className='text-brandSecondary font-bold text-2xl'>{impactNumbers.yearsOfExperience}</h3>
                                     <p className='text-neutralGrey font-normal text-base'>Years Of Experience</p>
                                 </div>
                             </div>

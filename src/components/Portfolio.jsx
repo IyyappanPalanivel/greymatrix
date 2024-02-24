@@ -27,7 +27,7 @@ const Portfolio = () => {
             <div className='px-4 md:px-14 max-w-screen-2xl mx-auto my-12'>
                 {/* Caring */}
                 <div className='w-1/2 mx-auto my-8 text-center'>
-                    <h2 className='font-semibold text-neutralDGrey text-4xl mb-2'>{PortfolioTitle}</h2>
+                    <h2 className='font-semibold text-brandSecondary text-4xl mb-2'>{PortfolioTitle}</h2>
                     <p className='text-neutralGrey text-base mb-2'>{PortfolioDescription}</p>
                 </div>
 

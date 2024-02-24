@@ -53,7 +53,7 @@ const Services = () => {
 
             {/* Clients Section */}
             <div className='text-center my-10'>
-                <h1 className='text-2xl text-neutralDGrey font-semibold mb-2'>Our Expertise</h1>
+                <h1 className='text-2xl text-brandSecondary font-semibold mb-2'>Our Expertise</h1>
                 <p className='text-neutralGrey text-base'>We expertise across various cutting-edge technologies like below</p>
 
                 {/* Clients GreyMatterLogo */}
@@ -67,7 +67,7 @@ const Services = () => {
 
             {/* Services Services */}
             <div className='text-center'>
-                <h1 className='text-2xl text-neutralDGrey font-semibold mb-2'>Digital services we provide</h1>
+                <h1 className='text-2xl text-brandSecondary font-semibold mb-2'>Digital services we provide</h1>
                 <p className='text-neutralGrey text-base'>Providing Your Business With A Quality IT Service is Our Passion</p>
             </div>
 
@@ -79,7 +79,7 @@ const Services = () => {
                             key={service.id}>
                             <div>
                                 <div className='mb-4 bg-[#E8F5E9] w-14 h-14 mx-auto rounded-tl-3xl rounded-br-3xl' ><img className='w-14 h-14 mx-auto -ml-5' src={service.image} /></div>
-                                <h4 className='text-neutralDGrey font-bold text-2xl mb-2 px-2'>{service.title}</h4>
+                                <h4 className='text-brandSecondary font-bold text-2xl mb-2 px-2'>{service.title}</h4>
                                 <p className='text-neutralGrey text-sm'>{service.description}</p>
                             </div>
                         </div>

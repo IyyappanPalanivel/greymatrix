@@ -8,8 +8,8 @@ export default {
   theme: {
     extend: {
       colors:{
-        'brandPrimary':'#4CAF4F',
-        'brandSecondary':'#263238',
+        'brandPrimary':'#01a00f',
+        'brandSecondary':'#000000',
         'brandInfo':'#2194f3',
         'neutralBlack':'#263238',
         'neutralDGrey':'#4D4D4D',
