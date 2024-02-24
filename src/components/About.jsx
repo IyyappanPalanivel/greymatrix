@@ -1,6 +1,9 @@
 import React from 'react';
 import Banner2 from '../assets/banner2.svg';
-import groups from '../assets/groups.png';
+import customers from '../assets/milestones/customers.png';
+import leadership from '../assets/milestones/leadership.png';
+import projects from '../assets/milestones/projects.png';
+import raise from '../assets/milestones/raise.png';
 
 const About = () => {
 
@@ -48,7 +51,7 @@ const About = () => {
                         <div className='space-y-8'>
                             {/* Projects */}
                             <div className='flex gap-4 items-center'>
-                                <img className='h-6 w-8' src={groups} />
+                                <img className='h-10 w-10' src={projects} />
                                 <div>
                                     <h3 className='text-brandSecondary font-bold text-2xl'>{impactNumbers.projectsCompleted}</h3>
                                     <p className='text-neutralGrey font-normal text-base'>Projects</p>
@@ -56,7 +59,7 @@ const About = () => {
                             </div>
                             {/* Clients */}
                             <div className='flex gap-4 items-center'>
-                                <img className='h-6 w-8' src={groups} />
+                                <img className='h-10 w-10' src={customers} />
                                 <div>
                                     <h3 className='text-brandSecondary font-bold text-2xl'>{impactNumbers.satisfiedClients}</h3>
                                     <p className='text-neutralGrey font-normal text-base'>Clients</p>
@@ -67,7 +70,7 @@ const About = () => {
                         <div className='space-y-8'>
                             {/* Team Members */}
                             <div className='flex gap-4 items-center'>
-                                <img className='h-6 w-8' src={groups} />
+                                <img className='h-10 w-10' src={leadership} />
                                 <div>
                                     <h3 className='text-brandSecondary font-bold text-2xl'>{impactNumbers.teamMembers}</h3>
                                     <p className='text-neutralGrey font-normal text-base'>Team Members</p>
@@ -75,7 +78,7 @@ const About = () => {
                             </div>
                             {/* Years Of Experience */}
                             <div className='flex gap-4 items-center'>
-                                <img className='h-6 w-8' src={groups} />
+                                <img className='h-10 w-10' src={raise} />
                                 <div>
                                     <h3 className='text-brandSecondary font-bold text-2xl'>{impactNumbers.yearsOfExperience}</h3>
                                     <p className='text-neutralGrey font-normal text-base'>Years Of Experience</p>
