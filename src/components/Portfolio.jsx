@@ -1,16 +1,19 @@
 import React from 'react';
+import BooksbearBanner from '../assets/portfolio/BooksbearBanner.jpg';
+import Lewansys from '../assets/portfolio/Lewansys.jpg';
+import Smartgold from '../assets/portfolio/Smartgold.jpg';
 
 const Portfolio = () => {
 
-    const blogs = [
+    const portfolioList = [
         {
-            id: 1, title: 'Creating Streamlined Safeguarding Processes with OneRen', src: '/src/assets/mac1.png'
+            id: 1, title: 'Booksbear is an E-Commerce platform where users can buy, sell, and rent books effortlessly.', src: BooksbearBanner
         },
         {
-            id: 2, title: 'What are your safeguarding responsibilities and how can you manage them?', src: '/src/assets/mac2.png'
+            id: 2, title: 'Lewansys is a go-to job portal, connecting talent with opportunities, seamlessly', src: Lewansys
         },
         {
-            id: 3, title: 'Revamping the Membership Model with Triathlon Australia', src: '/src/assets/mac1.png'
+            id: 3, title: 'Smartgold is a gold auction app redefining how users buy gold.', src: Smartgold
         },
     ];
     
@@ -30,12 +33,12 @@ const Portfolio = () => {
 
                 {/* Blogs */}
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center gap-8 justify-between'>
-                    {blogs.map(blog =>
+                    {portfolioList.map(blog =>
                         <div id={blog.id} className='mx-auto relative mb-12 cursor-pointer'>
-                            <img src={blog.src} className='w-96 h-72 hover:scale-95 transition-all duration-300' />
+                            <img src={blog.src} className='w-96 h-80 hover:scale-95 transition-all duration-300 rounded bg-cover' />
                             <div className='shadow-lg px-4 py-8 text-center bg-white rounded-md mx-auto md:w-3/4 absolute left-0 right-0 -bottom-12'>
-                                <h3 className='font-semibold text-neutralGrey'>{blog.title}</h3>
-                                <h4 className='font-semibold text-brandPrimary hover:text-neutralGrey transition-all duration-300'>Readmore {'-->'}</h4>
+                                <h3 className='font-semibold text-neutralGrey text-sm'>{blog.title}</h3>
+                                <h4 className='font-semibold text-brandPrimary text-sm hover:text-neutralGrey transition-all duration-300'>Readmore {'-->'}</h4>
                             </div>
                         </div>
                     )}
