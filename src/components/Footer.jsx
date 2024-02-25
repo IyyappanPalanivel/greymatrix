@@ -1,5 +1,7 @@
 import React from 'react';
-import GreyMatrixRoundedLogo from '../assets/GreyMatrixRoundedLogo.png'
+import GreyMatrixRoundedLogo from '../assets/brand/GreyMatrixRoundedLogo.png'
+import insta from '../assets/insta.png';
+import twitter from '../assets/twitter.png';
 
 const Footer = () => {
     return (
@@ -19,8 +21,8 @@ const Footer = () => {
 
                 {/* Social Medias */}
                 <div className='flex gap-4 mb-4'>
-                    <img className='h-7 w-7 bg-neutralGrey p-1 rounded-xl' src='/src/assets/insta.png' />
-                    <img className='h-7 w-7 bg-neutralGrey p-1 rounded-xl' src='/src/assets/twitter.png' />
+                    <img className='h-7 w-7 bg-neutralGrey p-1 rounded-xl' src={insta} />
+                    <img className='h-7 w-7 bg-neutralGrey p-1 rounded-xl' src={twitter} />
                 </div>
             </div>
 
@@ -30,7 +32,6 @@ const Footer = () => {
                 <div className='flex flex-col gap-4'>
                     <h4 className='font-semibold text-neutralWhite text-lg'>Company</h4>
                     <p className='text-neutralSilver text-xs font-normal'>About us</p>
-                    <p className='text-neutralSilver text-xs font-normal'>Blog</p>
                     <p className='text-neutralSilver text-xs font-normal'>Contact us</p>
                     <p className='text-neutralSilver text-xs font-normal'>Pricing</p>
                     <p className='text-neutralSilver text-xs font-normal'>Portfolio</p>
@@ -43,7 +44,6 @@ const Footer = () => {
                     <p className='text-neutralSilver text-xs font-normal'>Terms of service</p>
                     <p className='text-neutralSilver text-xs font-normal'>Legal</p>
                     <p className='text-neutralSilver text-xs font-normal'>Privacy policy</p>
-                    <p className='text-neutralSilver text-xs font-normal'>Status</p>
                 </div>
 
                 {/* Stay up to date */}

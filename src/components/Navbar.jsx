@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import GreyMatterLogo from '../assets/GreyMatterLogo.png';
+import GreyMatterLogo from '../assets/brand/GreyMatterLogo.png';
 import { Link } from 'react-scroll';
 import { FaXmark, FaBars } from "react-icons/fa6";
 import EnquiryModal from './EnquiryModal';
