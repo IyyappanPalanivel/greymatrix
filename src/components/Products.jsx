@@ -1,12 +1,12 @@
 import React from 'react';
 import MobileLogin from '../assets/MobileLogin.png';
-import tesla from '../assets/tesla.png';
+import gd from '../assets/technology/gd.jpg';
 
 import booksbear from '../assets/clients/booksbear.jpg';
 import abinyt from '../assets/clients/abinyt.jpg';
 import yahve from '../assets/clients/yahve.png';
-import jesta from '../assets/clients/jesta.png';
 import MagicMaze from '../assets/clients/MagicMaze.png';
+import jesta from '../assets/clients/jesta.png';
 
 const Products = () => {
 
@@ -46,7 +46,7 @@ const Products = () => {
             <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 bg-neutralSilver py-16' id='product'>
                 <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
                     <div className='md:w-1/3'>
-                        <img className='h-64 w-64' src={tesla} />
+                        <img className='h-64 w-auto rounded-md shadow-2xl' src={gd} />
                     </div>
 
                     <div className='md:w-2/3 mx-auto'>
@@ -58,7 +58,7 @@ const Products = () => {
                         <div className='flex py-4 gap-8 flex-wrap items-center'>
                             <img src={abinyt} className='cursor-pointer h-12 w-12 rounded'/>
                             <img src={booksbear} className='cursor-pointer h-12 w-12 rounded' />
-                            
+                            <img src={jesta} className='cursor-pointer h-12 w-12 rounded' />
                             <img src={yahve} className='cursor-pointer h-12 w-12 rounded'/>
                             <img src={MagicMaze} className='cursor-pointer h-12 w-12 rounded' />
                             <div>
