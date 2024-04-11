@@ -24,7 +24,6 @@ function EnquiryModal(props) {
 
     return (
         <>
-            {/* <Button onClick={() => setOpenModal(true)}>Toggle modal</Button> */}
             <Modal show={showModal} size="md" onClose={onCloseModal} popup>
                 <Modal.Header />
                 <Modal.Body>

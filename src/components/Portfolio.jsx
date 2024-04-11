@@ -3,7 +3,9 @@ import BooksbearBanner from '../assets/portfolio/BooksbearBanner.jpg';
 import Lewansys from '../assets/portfolio/Lewansys.jpg';
 import Smartgold from '../assets/portfolio/Smartgold.jpg';
 
-const Portfolio = () => {
+const Portfolio = (props) => {
+
+    const { toggleEnquiry } = props;
 
     const portfolioList = [
         {
@@ -51,6 +53,7 @@ const Portfolio = () => {
                 <h1 className='text-neutralBlack font-semibold text-3xl mb-4'>{Tagline}</h1>
                 <button
                     className='bg-brandPrimary px-3 py-3 rounded text-white hover:bg-neutralDGrey duration-300 transition-all'
+                    onClick={toggleEnquiry}
                 >Get Free Consulting {'-->'}
                 </button>
             </div>

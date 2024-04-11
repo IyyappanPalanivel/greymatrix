@@ -2,7 +2,10 @@ import React from 'react';
 import { Carousel } from 'flowbite-react';
 import banner1 from '../assets/banner1.png'
 
-const Home = () => {
+const Home = (props) => {
+
+    const {toggleEnquiry} = props;
+
     return (
         <div className='bg-neutralSilver' id='home'>
             <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen">
@@ -17,7 +20,7 @@ const Home = () => {
                         <div className='md:w-1/2'>
                             <h1 className='text-5xl font-semibold mb-4 leading-snug'>Welcome to <span className='text-brandPrimary leading-snug'>Grey Matrix</span>,</h1>
                             <p className='font-normal text-neutralDGrey text-base mb-8'>Where innovation meets excellence in IT solutions.</p>
-                            <button className='btn-primary'>Get Started</button>
+                            <button className='btn-primary' onClick={toggleEnquiry}>Get Started</button>
                         </div>
                     </div>
                 </Carousel>
