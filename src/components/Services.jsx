@@ -63,15 +63,6 @@ const Services = () => {
 
                 {/* Clients GreyMatterLogo */}
                 <div className='my-12 flex flex-wrap justify-between items-center gap-8'>
-
-                    <img className='w-20 h-20' src="../assets/react.svg" />
-                    <img className='w-20 h-20' src="../assets/android.png" />
-                    <img className='w-20 h-20' src="../assets/apple.png" />
-                    <img className='w-20 h-20' src="../assets/figma.png" />
-                </div>
-
-                {/* Clients GreyMatterLogo */}
-                <div className='my-12 flex flex-wrap justify-between items-center gap-8'>
                     <Lottie className='w-28 h-28' animationData={react} loop={true} />
                     <Lottie className='w-32 h-32' animationData={android} loop={true} />
                     <Lottie className='w-32 h-32' animationData={apple} loop={true} />

@@ -1,4 +1,6 @@
 import React from 'react';
+import Lottie from "lottie-react";
+import Innovation from "../assets/animations/Innovation.json";
 import Banner2 from '../assets/Banner2.svg';
 import customers from '../assets/milestones/customers.png';
 import leadership from '../assets/milestones/leadership.png';
@@ -25,7 +27,8 @@ const About = () => {
             {/* About Text */}
             <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8' id='about'>
                 <div className='py-10 mx-auto flex flex-col md:flex-row items-center justify-between gap-12'>
-                    <img className='h-96 w-96' src={Banner2} />
+                    {/* <img className='h-96 w-96' src={Banner2} /> */}
+                    <Lottie className='h-96 w-96' animationData={Innovation} loop={true} />
 
                     <div className='md:w-3/5 mx-auto'>
                         <h1 className='text-brandSecondary font-semibold text-3xl'>{AboutTitle}</h1>
