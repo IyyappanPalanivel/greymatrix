@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from 'flowbite-react';
 import banner1 from '../assets/banner1.png';
 import gd from '../assets/technology/gd.jpg';
-import TeamWork from '../assets/technology/TeamWork.jpg';
+import Teamwork from '../assets/technology/Teamwork.jpg';
 
 const Home = (props) => {
 
@@ -33,7 +33,7 @@ const Home = (props) => {
                     </div>
                     {/* Slide 3 */}
                     <div className="flex justify-center min-h-screen">
-                        <img src={TeamWork} className='object-cover object-center' />
+                        <img src={Teamwork} className='object-cover object-center' />
                     </div>
                 </Carousel>
             </div>

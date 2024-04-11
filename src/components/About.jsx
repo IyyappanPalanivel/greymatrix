@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner2 from '../assets/banner2.svg';
+import Banner2 from '../assets/Banner2.svg';
 import customers from '../assets/milestones/customers.png';
 import leadership from '../assets/milestones/leadership.png';
 import projects from '../assets/milestones/projects.png';
