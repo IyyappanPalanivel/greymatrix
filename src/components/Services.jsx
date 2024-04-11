@@ -5,6 +5,11 @@ import website from '../assets/services/website.png';
 import uiux from '../assets/services/uiux.png';
 import qa from '../assets/services/qa.png';
 import consult from '../assets/services/consult.png';
+import Lottie from "lottie-react";
+import react from "../assets/animations/react.json";
+import android from "../assets/animations/android.json";
+import apple from "../assets/animations/apple.json";
+import figma from "../assets/animations/figma.json";
 
 const Services = () => {
 
@@ -46,7 +51,7 @@ const Services = () => {
             image: consult
         }
     ];
-       
+
 
     return (
         <div className='md:px-14 px-4 max-w-screen-2xl mx-auto' id='service'>
@@ -58,11 +63,22 @@ const Services = () => {
 
                 {/* Clients GreyMatterLogo */}
                 <div className='my-12 flex flex-wrap justify-between items-center gap-8'>
-                    <img className='w-20 h-20' src="./src/assets/react.svg" />
-                    <img className='w-20 h-20' src="./src/assets/android.png" />
-                    <img className='w-20 h-20' src="./src/assets/apple.png" />
-                    <img className='w-20 h-20' src="./src/assets/figma.png" />
+
+                    <img className='w-20 h-20' src="../assets/react.svg" />
+                    <img className='w-20 h-20' src="../assets/android.png" />
+                    <img className='w-20 h-20' src="../assets/apple.png" />
+                    <img className='w-20 h-20' src="../assets/figma.png" />
                 </div>
+
+                {/* Clients GreyMatterLogo */}
+                <div className='my-12 flex flex-wrap justify-between items-center gap-8'>
+                    <Lottie className='w-28 h-28' animationData={react} loop={true} />
+                    <Lottie className='w-32 h-32' animationData={android} loop={true} />
+                    <Lottie className='w-32 h-32' animationData={apple} loop={true} />
+                    <Lottie className='w-32 h-32' animationData={figma} loop={true} />
+                </div>
+
+
             </div>
 
             {/* Services Services */}
