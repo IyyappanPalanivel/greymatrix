@@ -14,17 +14,18 @@ const Home = (props) => {
                 <Carousel
                     className='w-full mx-auto'
                     slideInterval={5000}
+                    slide={false}
                     onSlideChange={(index) => console.log('onSlideChange()', index)}>
                     {/* Slide 1 */}
-                    <div className="px-4 lg:px-20 my-28 md:my-8 py-12 flex flex:col md:flex-row-reverse justify-between gap-12">
-                        <div>
-                            <img src={banner1} alt="" className='md:w-96 md:h-96' />
+                    <div className="px-4 lg:px-20 my-8 md:my-8 py-12 md:flex md:flex:col md:flex-row-reverse justify-between gap-12">
+                        <div className='justify-center flex'>
+                            <img src={banner1} alt="" className='max-sm:w-40 md:w-96 md:h-96' />
                         </div>
                         {/* Hero Text */}
-                        <div className='md:w-1/2'>
+                        <div className='md:w-1/2 flex flex-col justify-center'>
                             <h1 className='text-5xl font-semibold mb-4 leading-snug'>Welcome to <span className='text-brandPrimary leading-snug'>Grey Matrix</span>,</h1>
                             <p className='font-normal text-neutralDGrey text-base mb-8'>Where innovation meets excellence in IT solutions.</p>
-                            <button className='btn-primary' onClick={toggleEnquiry}>Get Started</button>
+                            <button className='btn-primary max-w-fit' onClick={toggleEnquiry}>Get Started</button>
                         </div>
                     </div>
                     {/* Slide 2 */}
