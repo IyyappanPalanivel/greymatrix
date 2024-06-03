@@ -9,7 +9,7 @@ const ABOUT_US = "Welcome to Grey Matrix, where innovation meets excellence in I
 export const EMAIL_CONFIG = {
     ENQUIRY_SUBJECT: "Inquiry Regarding Software Services",
     ENQUIRY_BODY_TEMPLATE: (name, mobile) => 
-    `Dear GreyMatrix Team,
+    `Dear Grey Matrix Team,
 
     I hope this email finds you well. My name is ${name} and I am reaching out to inquire about the IT solutions services offered by your esteemed team.
 
@@ -25,6 +25,6 @@ Best regards,
 ${name}
 ${mobile}
 `,
-    EMAIL_RECIPIENT: 'vjdeveloper2020@gmail.com',
+    EMAIL_RECIPIENT: 'greymatrixworks@gmail.com',
   };
   
